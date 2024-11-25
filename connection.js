@@ -15,6 +15,7 @@ const client = new MongoClient(uri, {
 let connection
 try {
   connection = await client.connect()
+  console.log("Connected")
 } catch (error) {
   console.log(error)
 }

@@ -8,9 +8,9 @@ app.get('/profiles', async (req, res) => {
   try {
     const collection = await database.collection('profiles')
     const results = await collection.find({followers: {$gte: 1000 }}).toArray()
-    res.status(200).json(result)
+    res.status(200).json(results)
   } catch (error) {
-    next(error)
+    //next(error)
   }
   
 }); 
@@ -23,7 +23,7 @@ app.get('/profiles/:id', async (req, res) => {
     const result = await coll.findOne(query)
     res.status(200).json(result)
   } catch (error) {
-    next(error)
+    //next(error)
   }
 });
 
@@ -46,7 +46,7 @@ app.post('/profiles', async (req, res) => {
     })
     res.status(201).json(result)
   } catch (error) {
-    next(error)
+    //next(error)
   }
 });
 
@@ -59,7 +59,7 @@ app.patch('/profiles/:id', async (req,res) => {
     const result = await coll.updateOne(query, updates)
     res.status(201).json(result)
   } catch (error) {
-    next(error)
+    //next(error)
   }
 });
 
