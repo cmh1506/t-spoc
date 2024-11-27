@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: cmh1506/spociii-backend:1.0.29
+        image: cmh1506/spociii-backend:1.0.30
         imagePullPolicy: IfNotPresent
         name: backend
         ports:
