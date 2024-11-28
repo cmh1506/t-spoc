@@ -18,7 +18,8 @@ spec:
       - name: frontend
         image: spociii-frontend:1.0.31
         ports:
-        - containerPort: 80
+          - name: web
+            containerPort: 80
         resources:
           limits:
             memory: "128Mi" #128 MB
