@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: spociii-frontend:1.0.30
+        image: spociii-frontend:1.0.31
         ports:
         - containerPort: 80
         resources:

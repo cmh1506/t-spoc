@@ -4,7 +4,7 @@ metadata:
   name: frontend-ingress
 spec:
   rules:
-  - host: code4u.cloud
+  - host: code4u2.cloud
     http:
       paths:
       - path: /
