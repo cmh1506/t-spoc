@@ -4,3 +4,5 @@ https://docs.k3s.io/storage
 
 Install the Nginx Ingress Controller with the following command:
 k apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.7.1/deploy/static/provider/baremetal/deploy.yaml
+
+--disable=traefik
