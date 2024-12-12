@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1
+kind: IngressRoute
+metadata:
+  name: questdb
+  namespace: questdb
+spec:
+  entryPoints:
+    - web
+  routes:
+    - kind: Rule
+      match: Host(`code4u2.cloud`)
+      services:
+        - kind: Service
+          name: frontend
+          port: 80
